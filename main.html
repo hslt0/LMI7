@@ -1,14 +1,16 @@
 <!doctype html>
-<html>
+<html lang="en-GB">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="./assets/fonts/feather/feather.css">
     <link rel="stylesheet" href="./assets/css/theme.css">
     <link rel="stylesheet" href="./assets/css/site.css">
-    <title>Page title</title>
+    <title>ACME Fashion House | Clothing, Shoes and Accessories</title>
 </head>
 <body>
+<a class="sr-only sr-only-focusable text-dark" href="#main-content">Skip to main content</a>
+<header>
 <div class="navbar navbar-topbar navbar-expand-xl navbar-light bg-light">
     <div class="container">
         <!-- Promo -->
@@ -23,13 +25,14 @@
     <div class="container">
         <!-- Brand -->
         <h1 class="sr-hidden">ACME Fashion House</h1>
-        <a class="navbar-brand" href="#">
-            <img src="./assets/img/site/logo.png" width="209" height="81">
+        <a class="navbar-brand" href="#" aria-label="ACME Fashion House home">
+            <img src="./assets/img/site/logo.png" width="209" height="81" alt="ACME Fashion House">
         </a>
 
         <!-- Collapse -->
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <!-- Nav -->
+            <nav aria-label="Primary navigation">
             <ul class="navbar-nav mx-auto">
                 <li class="nav-item dropdown">
                     <!-- Toggle -->
@@ -41,7 +44,7 @@
                 </li>
                 <li class="nav-item dropdown">
                     <!-- Toggle -->
-                    <a class="nav-link" href="#">Shop</a>
+                    <a class="nav-link text-dark" href="#">Shop</a>
                 </li>
                 <li class="nav-item dropdown">
                     <!-- Toggle -->
@@ -55,32 +58,35 @@
                     <a class="nav-link" href="#">Docs</a>
                 </li>
             </ul>
+            </nav>
 
             <!-- Nav -->
+            <nav aria-label="Account and shopping">
             <ul class="navbar-nav flex-row">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <i class="fe fe-search"></i>
+                    <a class="nav-link" href="#" aria-label="Search">
+                        <i class="fe fe-search" aria-hidden="true"></i>
                     </a>
                 </li>
                 <li class="nav-item ml-lg-n4">
-                    <a class="nav-link" href="#">
-                        <i class="fe fe-user"></i>
+                    <a class="nav-link" href="#" aria-label="Your account">
+                        <i class="fe fe-user" aria-hidden="true"></i>
                     </a>
                 </li>
                 <li class="nav-item ml-lg-n4">
-                    <a class="nav-link" href="#">
-                        <i class="fe fe-heart"></i>
+                    <a class="nav-link" href="#" aria-label="Your favourites">
+                        <i class="fe fe-heart" aria-hidden="true"></i>
                     </a>
                 </li>
                 <li class="nav-item ml-lg-n4">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="#" aria-label="Shopping basket, 2 items">
 								<span data-cart-items="2">
-									<i class="fe fe-shopping-cart"></i>
+									<i class="fe fe-shopping-cart" aria-hidden="true"></i>
 								</span>
                     </a>
                 </li>
             </ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -101,7 +107,10 @@
     </div>
 </div>
 
+ </header>
+
 <!-- CATEGORIES -->
+<main id="main-content">
 <div>
     <div class="row no-gutters d-block d-lg-flex">
 
@@ -111,15 +120,15 @@
                 <div class="card-body mt-auto mb-n11 py-8">
                     <!-- Heading -->
                     <div class="center itemHeader">
-                        <div class="mb-0 font-weight-bolder h2">
+                        <h2 class="mb-0 font-weight-bolder h2">
                             Women
-                        </div>
+                        </h2>
                     </div>
                 </div>
                 <div class="card-body mt-auto py-8">
 
                     <!-- Button -->
-                    <a class="btn btn-white stretched-link" href="#">
+                    <a class="btn btn-white stretched-link" href="#" aria-label="Shop women's clothing">
                         Shop Women <i class="fe fe-arrow-right ml-2"></i>
                     </a>
 
@@ -133,14 +142,14 @@
                 <div class="card-body mt-auto mb-n11 py-8">
                     <!-- Heading -->
                     <div class="center itemHeader">
-                        <div class="mb-0 font-weight-bolder h2">
+                        <h2 class="mb-0 font-weight-bolder h2">
                             Men
-                        </div>
+                        </h2>
                     </div>
                 </div>
                 <div class="card-body mt-auto py-8">
                     <!-- Button -->
-                    <a class="btn btn-white stretched-link" href="#">
+                    <a class="btn btn-white stretched-link" href="#" aria-label="Shop men's clothing">
                         Shop Men <i class="fe fe-arrow-right ml-2"></i>
                     </a>
                 </div>
@@ -153,14 +162,14 @@
                 <div class="card-body mt-auto mb-n11 py-8">
                     <!-- Heading -->
                     <div class="center itemHeader">
-                        <div class="mb-0 font-weight-bolder h2">
+                        <h2 class="mb-0 font-weight-bolder h2">
                             Kids
-                        </div>
+                        </h2>
                     </div>
                 </div>
                 <div class="card-body mt-auto py-8">
                     <!-- Button -->
-                    <a class="btn btn-white stretched-link" href="#">
+                    <a class="btn btn-white stretched-link" href="#" aria-label="Shop children's clothing">
                         Shop Kids <i class="fe fe-arrow-right ml-2"></i>
                     </a>
                 </div>
@@ -182,9 +191,9 @@
                     <!-- Body -->
                     <div class="ml-6">
                         <!-- Heading -->
-                        <div class="heading-xxs mb-1">
+                        <h2 class="heading-xxs mb-1">
                             Free shipping
-                        </div>
+                        </h2>
                         <!-- Text -->
                         <p class="mb-0 font-size-sm text-muted">
                             From all orders over $100
@@ -203,9 +212,9 @@
                     <div class="ml-6">
 
                         <!-- Heading -->
-                        <div class="mb-1 heading-xxs">
+                        <h2 class="mb-1 heading-xxs">
                             Free returns
-                        </div>
+                        </h2>
 
                         <!-- Text -->
                         <p class="mb-0 font-size-sm text-muted">
@@ -227,9 +236,9 @@
                     <div class="ml-6">
 
                         <!-- Heading -->
-                        <div class="mb-1 heading-xxs">
+                        <h2 class="mb-1 heading-xxs">
                             Secure shopping
-                        </div>
+                        </h2>
 
                         <!-- Text -->
                         <p class="mb-0 font-size-sm text-muted">
@@ -251,9 +260,9 @@
                     <div class="ml-6">
 
                         <!-- Heading -->
-                        <div class="mb-1 heading-xxs">
+                        <h2 class="mb-1 heading-xxs">
                             Over 10,000 Styles
-                        </div>
+                        </h2>
 
                         <!-- Text -->
                         <p class="mb-0 font-size-sm text-muted">
@@ -274,15 +283,15 @@
             <div class="col-12 col-md-10 col-lg-8 col-xl-6 text-center">
 
                 <!-- Preheading -->
-                <div class="heading-xxs mb-3 text-gray-400">
+                <div class="heading-xxs mb-3 text-body">
                     New Collection
                 </div>
 
                 <!-- Heading -->
-                <div class="mb-4 h2BestPicks">Best Picks 2020</div>
+                <h2 class="mb-4 h2BestPicks text-body">Best Picks 2020</h2>
 
                 <!-- Subheading -->
-                <p class="mb-10 text-gray-500">
+                <p class="mb-10 text-body">
                     Appear, dry there darkness they're seas, dry waters thing fly midst. Beast, above fly brought Very
                     green.
                 </p>
@@ -300,11 +309,11 @@
 
                         <div class="itemHeader">
                             <!-- Heading -->
-                            <div class="h4 mb-0">Bags Collection</div>
+                            <h3 class="h4 mb-0">Bags Collection</h3>
 
                             <!-- Link -->
-                            <a class="btn btn-link stretched-link text-reset" href="#">
-                                Shop Now <i class="fe fe-arrow-right ml-2"></i>
+                            <a class="btn btn-link stretched-link text-reset" href="#" aria-label="Shop now: Bags Collection">
+                                Shop Now <i class="fe fe-arrow-right ml-2" aria-hidden="true"></i>
                             </a>
                         </div>
                     </div>
@@ -318,17 +327,17 @@
 
                         <!-- Circle -->
                         <div class="card-circle card-circle-lg card-circle-right">
-                            <strong>save</strong>
-                            <span class="font-size-h4 font-weight-bold">30%</span>
+                            <strong class="text-dark">save</strong>
+                            <span class="font-size-h4 font-weight-bold text-dark">30%</span>
                         </div>
 
                         <div class="itemHeader">
                             <!-- Heading -->
-                            <div class="h4 mb-0">Printed men’s Shirts</div>
+                            <h3 class="h4 mb-0">Printed men’s Shirts</h3>
 
                             <!-- Link -->
-                            <a class="btn btn-link stretched-link px-0 text-reset" href="#">
-                                Shop Now <i class="fe fe-arrow-right ml-2"></i>
+                            <a class="btn btn-link stretched-link px-0 text-reset" href="#" aria-label="Shop now: Printed men's Shirts">
+                                Shop Now <i class="fe fe-arrow-right ml-2" aria-hidden="true"></i>
                             </a>
                         </div>
                     </div>
@@ -341,11 +350,11 @@
                     <div class="card-body my-auto px-md-10 text-center text-md-left">
                         <!-- Heading -->
                         <div class="itemHeader">
-                            <div class="h4 mb-0">Basic women’s Dresses</div>
+                            <h3 class="h4 mb-0">Basic women’s Dresses</h3>
 
                             <!-- Link -->
-                            <a class="btn btn-link stretched-link px-0 text-reset" href="#">
-                                Shop Now <i class="fe fe-arrow-right ml-2"></i>
+                            <a class="btn btn-link stretched-link px-0 text-reset" href="#" aria-label="Shop now: Basic women's Dresses">
+                                Shop Now <i class="fe fe-arrow-right ml-2" aria-hidden="true"></i>
                             </a>
                         </div>
                     </div>
@@ -359,11 +368,11 @@
                     <div class="card-body my-auto text-center">
                         <!-- Heading -->
                         <div class="itemHeader">
-                            <div class="h4 mb-0">Sweatshirts</div>
+                            <h3 class="h4 mb-0">Sweatshirts</h3>
 
                             <!-- Link -->
-                            <a class="btn btn-link stretched-link text-reset" href="#">
-                                Shop Now <i class="fe fe-arrow-right ml-2"></i>
+                            <a class="btn btn-link stretched-link text-reset" href="#" aria-label="Shop now: Sweatshirts">
+                                Shop Now <i class="fe fe-arrow-right ml-2" aria-hidden="true"></i>
                             </a>
                         </div>
                     </div>
@@ -379,13 +388,13 @@
         <div class="row justify-content-center">
             <div class="col-12 col-md-10 col-lg-8 col-xl-6">
                 <!-- Heading -->
-                <div class="h2 mb-4 text-center">Top month Sellers</div>
+                <h2 class="h2 mb-4 text-center">Top month Sellers</h2>
 
                 <!-- Nav -->
                 <div class="nav justify-content-center mb-10">
-                    <a class="nav-link active" href="#topSellersTab">Women</a>
-                    <a class="nav-link" href="#topSellersTab">Men</a>
-                    <a class="nav-link" href="#topSellersTab">Kids</a>
+                    <a class="nav-link active text-gray-500" href="#topSellersTab">Women</a>
+                    <a class="nav-link text-gray-500" href="#topSellersTab">Men</a>
+                    <a class="nav-link text-gray-500" href="#topSellersTab">Kids</a>
                 </div>
             </div>
         </div>
@@ -407,21 +416,21 @@
                                 <!-- Image -->
                                 <a href="#">
                                     <img class="card-img-top card-img-front" src="./assets/img/site/sandals.png"
-                                         width="253" height="300">
+                                         width="253" height="300" alt="Leather mid-heel sandals">
                                 </a>
 
                                 <!-- Actions -->
 
-                                <button class="btn btn-xs btn-circle btn-white-primary">
-                                    <i class="fe fe-eye"></i>
+                                <button class="btn btn-xs btn-circle btn-white-primary" aria-label="View Leather mid-heel sandals">
+                                    <i class="fe fe-eye" aria-hidden="true"></i>
                                 </button>
 
-                                <button class="btn btn-xs btn-circle btn-white-primary">
-                                    <i class="fe fe-shopping-cart"></i>
+                                <button class="btn btn-xs btn-circle btn-white-primary" aria-label="Add Leather mid-heel sandals to basket">
+                                    <i class="fe fe-shopping-cart" aria-hidden="true"></i>
                                 </button>
 
-                                <button class="btn btn-xs btn-circle btn-white-primary">
-                                    <i class="fe fe-heart"></i>
+                                <button class="btn btn-xs btn-circle btn-white-primary" aria-label="Add Leather mid-heel sandals to favourites">
+                                    <i class="fe fe-heart" aria-hidden="true"></i>
                                 </button>
                             </div>
 
@@ -455,20 +464,21 @@
                                 <!-- Image -->
                                 <a href="#">
                                     <img class="card-img-top card-img-back"
-                                         src="./assets/img/site/floraldress.png" width="253" height="300">
+                                         src="./assets/img/site/floraldress.png" width="253" height="300"
+                                         alt="Cotton floral print dress">
                                 </a>
 
                                 <!-- Actions -->
-                                <button class="btn btn-xs btn-circle btn-white-primary">
-                                    <i class="fe fe-eye"></i>
+                                <button class="btn btn-xs btn-circle btn-white-primary" aria-label="View Cotton floral print dress">
+                                    <i class="fe fe-eye" aria-hidden="true"></i>
                                 </button>
 
-                                <button class="btn btn-xs btn-circle btn-white-primary">
-                                    <i class="fe fe-shopping-cart"></i>
+                                <button class="btn btn-xs btn-circle btn-white-primary" aria-label="Add Cotton floral print dress to basket">
+                                    <i class="fe fe-shopping-cart" aria-hidden="true"></i>
                                 </button>
 
-                                <button class="btn btn-xs btn-circle btn-white-primary">
-                                    <i class="fe fe-heart"></i>
+                                <button class="btn btn-xs btn-circle btn-white-primary" aria-label="Add Cotton floral print dress to favourites">
+                                    <i class="fe fe-heart" aria-hidden="true"></i>
                                 </button>
                             </div>
 
@@ -508,20 +518,21 @@
                                 <!-- Image -->
                                 <a href="#">
                                     <img class="card-img-top card-img-back"
-                                         src="./assets/img/site/leathersneaker.png" width="253" height="300">
+                                         src="./assets/img/site/leathersneaker.png" width="253" height="300"
+                                         alt="Leather sneakers">
                                 </a>
 
                                 <!-- Actions -->
-                                <button class="btn btn-xs btn-circle btn-white-primary">
-                                    <i class="fe fe-eye"></i>
+                                <button class="btn btn-xs btn-circle btn-white-primary" aria-label="View Leather sneakers">
+                                    <i class="fe fe-eye" aria-hidden="true"></i>
                                 </button>
 
-                                <button class="btn btn-xs btn-circle btn-white-primary">
-                                    <i class="fe fe-shopping-cart"></i>
+                                <button class="btn btn-xs btn-circle btn-white-primary" aria-label="Add Leather sneakers to basket">
+                                    <i class="fe fe-shopping-cart" aria-hidden="true"></i>
                                 </button>
 
-                                <button class="btn btn-xs btn-circle btn-white-primary">
-                                    <i class="fe fe-heart"></i>
+                                <button class="btn btn-xs btn-circle btn-white-primary" aria-label="Add Leather sneakers to favourites">
+                                    <i class="fe fe-heart" aria-hidden="true"></i>
                                 </button>
                             </div>
 
@@ -541,8 +552,8 @@
 
                                 <!-- Price -->
                                 <div class="font-weight-bold">
-                                    <span class="font-size-xs text-gray-350 text-decoration-line-through">$85.00</span>
-                                    <span class="text-primary">$85.00</span>
+                                    <span class="font-size-xs text-gray-500 text-decoration-line-through">$85.00</span>
+                                    <span class="text-gray-500">$85.00</span>
                                 </div>
                             </div>
                         </div>
@@ -555,21 +566,22 @@
                                 <!-- Image -->
                                 <a href="#">
                                     <img class="card-img-top card-img-front"
-                                         src="./assets/img/site/croppedtop.png" width="253" height="300">
+                                         src="./assets/img/site/croppedtop.png" width="253" height="300"
+                                         alt="Cropped cotton top">
                                 </a>
 
                                 <!-- Actions -->
 
-                                <button class="btn btn-xs btn-circle btn-white-primary">
-                                    <i class="fe fe-eye"></i>
+                                <button class="btn btn-xs btn-circle btn-white-primary" aria-label="View Cropped cotton top">
+                                    <i class="fe fe-eye" aria-hidden="true"></i>
                                 </button>
 
-                                <button class="btn btn-xs btn-circle btn-white-primary">
-                                    <i class="fe fe-shopping-cart"></i>
+                                <button class="btn btn-xs btn-circle btn-white-primary" aria-label="Add Cropped cotton top to basket">
+                                    <i class="fe fe-shopping-cart" aria-hidden="true"></i>
                                 </button>
 
-                                <button class="btn btn-xs btn-circle btn-white-primary">
-                                    <i class="fe fe-heart"></i>
+                                <button class="btn btn-xs btn-circle btn-white-primary" aria-label="Add Cropped cotton top to favourites">
+                                    <i class="fe fe-heart" aria-hidden="true"></i>
                                 </button>
                             </div>
 
@@ -603,20 +615,21 @@
                                 <!-- Image -->
                                 <a href="#">
                                     <img class="card-img-top card-img-front"
-                                         src="./assets/img/site/mididress.png" width="253" height="300">
+                                         src="./assets/img/site/mididress.png" width="253" height="300"
+                                         alt="Floral print midi dress">
                                 </a>
 
                                 <!-- Actions -->
-                                <button class="btn btn-xs btn-circle btn-white-primary">
-                                    <i class="fe fe-eye"></i>
+                                <button class="btn btn-xs btn-circle btn-white-primary" aria-label="View Floral print midi dress">
+                                    <i class="fe fe-eye" aria-hidden="true"></i>
                                 </button>
 
-                                <button class="btn btn-xs btn-circle btn-white-primary">
-                                    <i class="fe fe-shopping-cart"></i>
+                                <button class="btn btn-xs btn-circle btn-white-primary" aria-label="Add Floral print midi dress to basket">
+                                    <i class="fe fe-shopping-cart" aria-hidden="true"></i>
                                 </button>
 
-                                <button class="btn btn-xs btn-circle btn-white-primary">
-                                    <i class="fe fe-heart"></i>
+                                <button class="btn btn-xs btn-circle btn-white-primary" aria-label="Add Floral print midi dress to favourites">
+                                    <i class="fe fe-heart" aria-hidden="true"></i>
                                 </button>
                             </div>
 
@@ -655,22 +668,22 @@
                             <!-- Image -->
                             <div class="card-img">
                                 <!-- Image -->
-                                <a href="product.html">
+                                <a href="#">
                                     <img class="card-img-top card-img-back" src="./assets/img/site/suedebag.png"
-                                         width="253" height="300">
+                                         width="253" height="300" alt="Suede cross-body bag">
                                 </a>
 
                                 <!-- Actions -->
-                                <button class="btn btn-xs btn-circle btn-white-primary">
-                                    <i class="fe fe-eye"></i>
+                                <button class="btn btn-xs btn-circle btn-white-primary" aria-label="View Suede cross-body bag">
+                                    <i class="fe fe-eye" aria-hidden="true"></i>
                                 </button>
 
-                                <button class="btn btn-xs btn-circle btn-white-primary">
-                                    <i class="fe fe-shopping-cart"></i>
+                                <button class="btn btn-xs btn-circle btn-white-primary" aria-label="Add Suede cross-body bag to basket">
+                                    <i class="fe fe-shopping-cart" aria-hidden="true"></i>
                                 </button>
 
-                                <button class="btn btn-xs btn-circle btn-white-primary">
-                                    <i class="fe fe-heart"></i>
+                                <button class="btn btn-xs btn-circle btn-white-primary" aria-label="Add Suede cross-body bag to favourites">
+                                    <i class="fe fe-heart" aria-hidden="true"></i>
                                 </button>
                             </div>
 
@@ -691,8 +704,8 @@
 
                                 <!-- Price -->
                                 <div class="font-weight-bold">
-                                    <span class="font-size-xs text-gray-350 text-decoration-line-through">$79.00</span>
-                                    <span class="text-primary">$49.00</span>
+                                    <span class="font-size-xs text-gray-500 text-decoration-line-through">$79.00</span>
+                                    <span class="text-gray-500">$49.00</span>
                                 </div>
                             </div>
                         </div>
@@ -703,23 +716,22 @@
                             <!-- Image -->
                             <div class="card-img">
                                 <!-- Image -->
-                                <a href="product.html">
-                                    <img class="card-img-top card-img-back"
-                                         src="./assets/img/site/alineskirt.png" width="253" height="300">
-                                </a>
+                                <img class="card-img-top card-img-back"
+                                     src="./assets/img/site/alineskirt.png" width="253" height="300"
+                                     alt="Printed A-line skirt">
 
                                 <!-- Actions -->
 
-                                <button class="btn btn-xs btn-circle btn-white-primary">
-                                    <i class="fe fe-eye"></i>
+                                <button class="btn btn-xs btn-circle btn-white-primary" aria-label="View Printed A-line skirt">
+                                    <i class="fe fe-eye" aria-hidden="true"></i>
                                 </button>
 
-                                <button class="btn btn-xs btn-circle btn-white-primary">
-                                    <i class="fe fe-shopping-cart"></i>
+                                <button class="btn btn-xs btn-circle btn-white-primary" aria-label="Add Printed A-line skirt to basket">
+                                    <i class="fe fe-shopping-cart" aria-hidden="true"></i>
                                 </button>
 
-                                <button class="btn btn-xs btn-circle btn-white-primary">
-                                    <i class="fe fe-heart"></i>
+                                <button class="btn btn-xs btn-circle btn-white-primary" aria-label="Add Printed A-line skirt to favourites">
+                                    <i class="fe fe-heart" aria-hidden="true"></i>
                                 </button>
                             </div>
 
@@ -757,20 +769,21 @@
                                 <!-- Image -->
                                 <a href="#">
                                     <img class="card-img-top card-img-front"
-                                         src="./assets/img/site/strappysandals.png" width="253" height="300">
+                                         src="./assets/img/site/strappysandals.png" width="253" height="300"
+                                         alt="Heel strappy sandals">
                                 </a>
 
                                 <!-- Actions -->
-                                <button class="btn btn-xs btn-circle btn-white-primary">
-                                    <i class="fe fe-eye"></i>
+                                <button class="btn btn-xs btn-circle btn-white-primary" aria-label="View Heel strappy sandals">
+                                    <i class="fe fe-eye" aria-hidden="true"></i>
                                 </button>
 
-                                <button class="btn btn-xs btn-circle btn-white-primary">
-                                    <i class="fe fe-shopping-cart"></i>
+                                <button class="btn btn-xs btn-circle btn-white-primary" aria-label="Add Heel strappy sandals to basket">
+                                    <i class="fe fe-shopping-cart" aria-hidden="true"></i>
                                 </button>
 
-                                <button class="btn btn-xs btn-circle btn-white-primary">
-                                    <i class="fe fe-heart"></i>
+                                <button class="btn btn-xs btn-circle btn-white-primary" aria-label="Add Heel strappy sandals to favourites">
+                                    <i class="fe fe-heart" aria-hidden="true"></i>
                                 </button>
                             </div>
 
@@ -808,14 +821,14 @@
         <div class="row justify-content-center">
             <div class="col-12 col-md-10 col-lg-8 col-xl-6 text-center">
                 <!-- Preheading -->
-                <div class="heading-xxs mb-3 text-gray-400">
+                <div class="heading-xxs mb-3 text-gray-500">
                     What buyers say
                 </div>
 
                 <!-- Heading -->
-                <div class="h2 mb-10">
+                <h2 class="h2 mb-10">
                     Latest Buyers Reviews
-                </div>
+                </h2>
             </div>
         </div>
         <div class="row">
@@ -829,7 +842,7 @@
                             <div class="col-4">
                                 <!-- Image -->
                                 <img src="./assets/img/site/smallsneakers.png" class="img-fluid" width="73"
-                                     height="73">
+                                                     height="73" alt="Low-top sneakers">
                             </div>
                             <div class="col-8 ml-n2">
                                 <!-- Preheading -->
@@ -844,7 +857,7 @@
                                     </a>
                                 </div>
                                 <!-- Rating -->
-                                <div class="rating font-size-xxs text-warning">
+                                <div class="rating font-size-xxs text-muted" role="img" aria-label="Rated 5 out of 5 stars">
                                     <div class="rating-item">
                                         <i class="fas fa-star"></i>
                                     </div>
@@ -865,7 +878,7 @@
                         </div>
 
                         <!-- Blockquote -->
-                        <div class="mb-0">
+                        <blockquote class="mb-0 border-0 p-0">
                             <p class="text-muted">
                                 These sneakers are just what I needed! they have a mixture of fabrics, and provide
                                 fantastic heel support. The underside however, has a hard wearing sole which becomes
@@ -875,7 +888,7 @@
                                 Logan Edwards,
                                 <time datetime="2019-06-01">01 Jun 2019</time>
                             </div>
-                        </div>
+                            </blockquote>
                     </div>
                 </div>
             </div>
@@ -890,7 +903,7 @@
                             <div class="col-4">
                                 <!-- Image -->
                                 <img src="./assets/img/site/cottondress.png" class="img-fluid" width="73"
-                                     height="73">
+                                                     height="73" alt="Cotton print dress">
                             </div>
                             <div class="col-8 ml-n2">
                                 <!-- Preheading -->
@@ -905,7 +918,7 @@
                                     </a>
                                 </div>
                                 <!-- Rating -->
-                                <div class="rating font-size-xxs text-warning">
+                                <div class="rating font-size-xxs text-muted" role="img" aria-label="Rated 5 out of 5 stars">
                                     <div class="rating-item">
                                         <i class="fas fa-star"></i>
                                     </div>
@@ -927,7 +940,7 @@
                         </div>
 
                         <!-- Blockquote -->
-                        <div class="mb-0">
+                        <blockquote class="mb-0 border-0 p-0">
                             <p class="text-muted">
                                 The print on the dress is just what I've been looking for. It has several layers and
                                 goes from near transparent to opaque and then a dark colour. The cut is very
@@ -937,7 +950,7 @@
                                 Jane Jefferson,
                                 <time datetime="2019-05-29">29 May 2019</time>
                             </div>
-                        </div>
+                            </blockquote>
                     </div>
                 </div>
 
@@ -952,7 +965,8 @@
                         <div class="row align-items-center mb-6">
                             <div class="col-4">
                                 <!-- Image -->
-                                <img src="./assets/img/site/tshirt.png" class="img-fluid" width="73" height="73">
+                                <img src="./assets/img/site/tshirt.png" class="img-fluid" width="73" height="73"
+                                     alt="Oversized print T-shirt">
                             </div>
                             <div class="col-8 ml-n2">
                                 <!-- Preheading -->
@@ -967,7 +981,7 @@
                                     </a>
                                 </div>
                                 <!-- Rating -->
-                                <div class="rating font-size-xxs text-warning">
+                                <div class="rating font-size-xxs text-muted" role="img" aria-label="Rated 5 out of 5 stars">
                                     <div class="rating-item">
                                         <i class="fas fa-star"></i>
                                     </div>
@@ -988,7 +1002,7 @@
                         </div>
 
                         <!-- Blockquote -->
-                        <div class="mb-0">
+                        <blockquote class="mb-0 border-0 p-0">
                             <p class="text-muted">
                                 The t-shirt wasn't as oversized as I was expecting. It pulls around the arms, and
                                 bunches up around the waist. I've noticed the colour beginning to fade to a grey.
@@ -997,7 +1011,7 @@
                                 Darrell Baker,
                                 <time datetime="2019-05-18">18 May 2019</time>
                             </div>
-                        </div>
+                            </blockquote>
                     </div>
                 </div>
             </div>
@@ -1011,7 +1025,7 @@
         <div class="row">
             <div class="col-12 text-center">
                 <!-- Heading -->
-                <div class="mb-3 h2">ACME brands</div>
+                <h2 class="mb-3 h2">ACME brands</h2>
 
                 <!-- Subheading -->
                 <p class="mb-10 font-size-lg text-gray-500">
@@ -1025,10 +1039,10 @@
                 <!-- Card -->
                 <div class="card mb-2">
                     <!-- Image -->
-                    <img src="./assets/img/products/product-16.jpg" class="card-img">
+                    <img src="./assets/img/products/product-16.jpg" class="card-img" alt="ACME fashion post 1">
 
                     <!-- Overlay -->
-                    <a class="card-img-overlay align-items-center bg-dark-40" href="#">
+                    <a class="card-img-overlay align-items-center bg-dark-40" href="#" aria-label="View ACME fashion post 1: 248 likes and 3 comments">
                         <p class="my-0 font-size-xxs text-center text-white">
                             <i class="fe fe-heart mr-2"></i> 248 <i class="fe fe-message-square mr-2 ml-3"></i> 3
                         </p>
@@ -1040,10 +1054,10 @@
                 <div class="card mb-2">
 
                     <!-- Image -->
-                    <img src="./assets/img/products/product-17.jpg" class="card-img">
+                    <img src="./assets/img/products/product-17.jpg" class="card-img" alt="ACME fashion post 2">
 
                     <!-- Overlay -->
-                    <a class="card-img-overlay align-items-center bg-dark-40" href="#">
+                    <a class="card-img-overlay align-items-center bg-dark-40" href="#" aria-label="View ACME fashion post 2: 967 likes and 8 comments">
                         <p class="my-0 font-size-xxs text-center text-white">
                             <i class="fe fe-heart mr-2"></i> 967 <i class="fe fe-message-square mr-2 ml-3"></i> 8
                         </p>
@@ -1056,10 +1070,10 @@
                 <div class="card mb-2">
 
                     <!-- Image -->
-                    <img src="./assets/img/products/product-18.jpg" class="card-img">
+                    <img src="./assets/img/products/product-18.jpg" class="card-img" alt="ACME fashion post 3">
 
                     <!-- Overlay -->
-                    <a class="card-img-overlay align-items-center bg-dark-40" href="#">
+                    <a class="card-img-overlay align-items-center bg-dark-40" href="#" aria-label="View ACME fashion post 3: 685 likes and 12 comments">
                         <p class="my-0 font-size-xxs text-center text-white">
                             <i class="fe fe-heart mr-2"></i> 685 <i class="fe fe-message-square mr-2 ml-3"></i> 12
                         </p>
@@ -1071,10 +1085,10 @@
                 <div class="card mb-2">
 
                     <!-- Image -->
-                    <img src="./assets/img/products/product-19.jpg" class="card-img">
+                    <img src="./assets/img/products/product-19.jpg" class="card-img" alt="ACME fashion post 4">
 
                     <!-- Overlay -->
-                    <a class="card-img-overlay align-items-center bg-dark-40" href="#">
+                    <a class="card-img-overlay align-items-center bg-dark-40" href="#" aria-label="View ACME fashion post 4: 124 likes and 3 comments">
                         <p class="my-0 font-size-xxs text-center text-white">
                             <i class="fe fe-heart mr-2"></i> 124 <i class="fe fe-message-square mr-2 ml-3"></i> 3
                         </p>
@@ -1089,10 +1103,10 @@
                 <div class="card">
 
                     <!-- Image -->
-                    <img src="./assets/img/products/product-20.jpg" class="card-img">
+                    <img src="./assets/img/products/product-20.jpg" class="card-img" alt="ACME fashion post 5">
 
                     <!-- Overlay -->
-                    <a class="card-img-overlay align-items-center bg-dark-40" href="#">
+                    <a class="card-img-overlay align-items-center bg-dark-40" href="#" aria-label="View ACME fashion post 5: 356 likes and 87 comments">
                         <p class="my-0 font-size-xxs text-center text-white">
                             <i class="fe fe-heart mr-2"></i> 356 <i class="fe fe-message-square mr-2 ml-3"></i> 87
                         </p>
@@ -1106,10 +1120,10 @@
                 <div class="card">
 
                     <!-- Image -->
-                    <img src="./assets/img/products/product-21.jpg" class="card-img">
+                    <img src="./assets/img/products/product-21.jpg" class="card-img" alt="ACME fashion post 6">
 
                     <!-- Overlay -->
-                    <a class="card-img-overlay align-items-center bg-dark-40" href="#">
+                    <a class="card-img-overlay align-items-center bg-dark-40" href="#" aria-label="View ACME fashion post 6: 868 likes and 47 comments">
                         <p class="my-0 font-size-xxs text-center text-white">
                             <i class="fe fe-heart mr-2"></i> 868 <i class="fe fe-message-square mr-2 ml-3"></i> 47
                         </p>
@@ -1121,53 +1135,55 @@
         <div class="row">
             <div class="col-4 col-sm-3 col-md text-center">
                 <!-- Brand -->
-                <img src="./assets/img/brands/gray-350/mango.svg" class="img-fluid mb-7 mb-md-0">
+                <img src="./assets/img/brands/gray-350/mango.svg" class="img-fluid mb-7 mb-md-0" alt="Mango">
             </div>
             <div class="col-4 col-sm-3 col-md text-center">
                 <!-- Brand -->
-                <img src="./assets/img/brands/gray-350/zara.svg" class="img-fluid mb-7 mb-md-0">
+                <img src="./assets/img/brands/gray-350/zara.svg" class="img-fluid mb-7 mb-md-0" alt="Zara">
             </div>
             <div class="col-4 col-sm-3 col-md text-center">
                 <!-- Brand -->
-                <img src="./assets/img/brands/gray-350/reebok.svg" class="img-fluid mb-7 mb-md-0">
+                <img src="./assets/img/brands/gray-350/reebok.svg" class="img-fluid mb-7 mb-md-0" alt="Reebok">
             </div>
             <div class="col-4 col-sm-3 col-md text-center">
                 <!-- Brand -->
-                <img src="./assets/img/brands/gray-350/asos.svg" class="img-fluid mb-7 mb-md-0">
+                <img src="./assets/img/brands/gray-350/asos.svg" class="img-fluid mb-7 mb-md-0" alt="ASOS">
             </div>
             <div class="col-4 col-sm-3 col-md text-center">
                 <!-- Brand -->
-                <img src="./assets/img/brands/gray-350/stradivarius.svg" class="img-fluid mb-6 mb-sm-0">
+                <img src="./assets/img/brands/gray-350/stradivarius.svg" class="img-fluid mb-6 mb-sm-0" alt="Stradivarius">
             </div>
             <div class="col-4 col-sm-3 col-md text-center">
                 <!-- Brand -->
-                <img src="./assets/img/brands/gray-350/adidas.svg" class="img-fluid mb-6 mb-sm-0">
+                <img src="./assets/img/brands/gray-350/adidas.svg" class="img-fluid mb-6 mb-sm-0" alt="Adidas">
             </div>
             <div class="col-4 col-sm-3 col-md text-center">
                 <!-- Brand -->
-                <img src="./assets/img/brands/gray-350/bershka.svg" class="img-fluid">
+                <img src="./assets/img/brands/gray-350/bershka.svg" class="img-fluid" alt="Bershka">
             </div>
         </div>
     </div>
 </div>
 
 <!-- FOOTER -->
-<div class="bg-dark bg-cover footer">
+</main>
+<footer class="bg-dark bg-cover footer">
     <div class="py-12 border-bottom border-gray-700">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 col-md-10 col-lg-8 col-xl-6">
 
                     <!-- Heading -->
-                    <div class="h5 mb-7 text-center text-white">Want the latest style ideas and fashion advice in your
+                    <h2 class="h5 mb-7 text-center text-white">Want the latest style ideas and fashion advice in your
                         inbox?
-                    </div>
+                    </h2>
 
                     <!-- Form -->
                     <form class="mb-11">
                         <div class="form-row align-items-start">
                             <div class="col">
-                                <input type="email" class="form-control form-control-gray-700 form-control-lg"
+                                <label class="text-white mb-2" for="newsletter-email">Email address</label>
+                                <input id="newsletter-email" type="email" class="form-control form-control-gray-700 form-control-lg"
                                        placeholder="Enter Email *">
                             </div>
                             <div class="col-auto">
@@ -1180,59 +1196,63 @@
             <div class="row">
                 <div class="col-12 col-md-3">
                     <!-- Heading -->
-                    <img src="./assets/img/site/logobw.png" width="205" height="81">
+                    <img src="./assets/img/site/logobw.png" width="205" height="81" alt="ACME Fashion House">
                 </div>
                 <div class="col-6 col-sm">
 
                     <!-- Heading -->
-                    <div class="heading-xxs mb-4 text-white">
-                        <div>Support</div>
-                    </div>
-
-                    <div><a class="text-gray-300" tabindex="1" href="#">Contact Us</a></div>
-                    <div><a class="text-gray-300" tabindex="2" href="#">FAQs</a></div>
-                    <div><a class="text-gray-300" tabindex="3" href="#">Size Guide</a></div>
-                    <div><a class="text-gray-300" tabindex="4" href="#">Shipping & Returns</a></div>
-
-                </div>
-                <div class="col-6 col-sm">
-
-                    <!-- Heading -->
-                    <div class="heading-xxs mb-4 text-white">
-                        <div>Shop</div>
-                    </div>
-
-                    <div><a class="text-gray-300" tabindex="5" href="#">Men's Shopping</a></div>
-                    <div><a class="text-gray-300" tabindex="6" href="#">Women's Shopping</a></div>
-                    <div><a class="text-gray-300" tabindex="7" href="#">Kids' Shopping</a></div>
-                    <div><a class="text-gray-300" tabindex="8" href="#">Discounts</a></div>
+                    <nav aria-label="Support">
+                        <h2 class="heading-xxs mb-4 text-white">Support</h2>
+                        <ul class="list-unstyled mb-0">
+                            <li><a class="text-gray-300" href="#">Contact Us</a></li>
+                            <li><a class="text-gray-300" href="#">FAQs</a></li>
+                            <li><a class="text-gray-300" href="#">Size Guide</a></li>
+                            <li><a class="text-gray-300" href="#">Shipping &amp; Returns</a></li>
+                        </ul>
+                    </nav>
 
                 </div>
                 <div class="col-6 col-sm">
 
                     <!-- Heading -->
-                    <div class="heading-xxs mb-4 text-white">
-                        <div>Company</div>
-                    </div>
-
-                    <div><a class="text-gray-300" tabindex="9" href="#">How we work</a></div>
-                    <div><a class="text-gray-300" tabindex="10" href="#">Achievements</a></div>
-                    <div><a class="text-gray-300" tabindex="11" href="#">Our Mission</a></div>
-                    <div><a class="text-gray-300" tabindex="12" href="#">Meet the Team</a></div>
-                    <div><a class="text-gray-300" tabindex="13" href="#">Web accessibility policy</a></div>
+                    <nav aria-label="Shop">
+                        <h2 class="heading-xxs mb-4 text-white">Shop</h2>
+                        <ul class="list-unstyled mb-0">
+                            <li><a class="text-gray-300" href="#">Men's Shopping</a></li>
+                            <li><a class="text-gray-300" href="#">Women's Shopping</a></li>
+                            <li><a class="text-gray-300" href="#">Kids' Shopping</a></li>
+                            <li><a class="text-gray-300" href="#">Discounts</a></li>
+                        </ul>
+                    </nav>
 
                 </div>
                 <div class="col-6 col-sm">
 
                     <!-- Heading -->
-                    <div class="heading-xxs mb-4 text-white">
-                        <div>Contact</div>
-                    </div>
+                    <nav aria-label="Company information">
+                        <h2 class="heading-xxs mb-4 text-white">Company</h2>
+                        <ul class="list-unstyled mb-0">
+                            <li><a class="text-gray-300" href="#">How we work</a></li>
+                            <li><a class="text-gray-300" href="#">Achievements</a></li>
+                            <li><a class="text-gray-300" href="#">Our Mission</a></li>
+                            <li><a class="text-gray-300" href="#">Meet the Team</a></li>
+                            <li><a class="text-gray-300" href="#">Web accessibility policy</a></li>
+                        </ul>
+                    </nav>
 
-                    <div><a class="text-gray-300" tabindex="14" href="#">Contact Us</a></div>
-                    <div><a class="text-gray-300" tabindex="15" href="#">Become a Dealer</a></div>
-                    <div><a class="text-gray-300" tabindex="16" href="#">+61 1234 567890</a></div>
-                    <div><a class="text-gray-300" tabindex="17" href="#">hello@canaxess.com.au</a></div>
+                </div>
+                <div class="col-6 col-sm">
+
+                    <!-- Heading -->
+                    <nav aria-label="Contact">
+                        <h2 class="heading-xxs mb-4 text-white">Contact</h2>
+                        <ul class="list-unstyled mb-0">
+                            <li><a class="text-gray-300" href="#">Contact Us</a></li>
+                            <li><a class="text-gray-300" href="#">Become a Dealer</a></li>
+                            <li><a class="text-gray-300" href="#">+61 1234 567890</a></li>
+                            <li><a class="text-gray-300" href="#">hello@canaxess.com.au</a></li>
+                        </ul>
+                    </nav>
 
                 </div>
             </div>
@@ -1243,17 +1263,18 @@
                     <div class="col-auto">
 
                         <!-- Payment methods -->
-                        <img class="footer-payment" src="./assets/img/payment/mastercard.svg">
-                        <img class="footer-payment" src="./assets/img/payment/visa.svg">
-                        <img class="footer-payment" src="./assets/img/payment/amex.svg">
-                        <img class="footer-payment" src="./assets/img/payment/paypal.svg">
-                        <img class="footer-payment" src="./assets/img/payment/maestro.svg">
-                        <img class="footer-payment" src="./assets/img/payment/klarna.svg">
+                        <img class="footer-payment" src="./assets/img/payment/mastercard.svg" alt="Mastercard">
+                        <img class="footer-payment" src="./assets/img/payment/visa.svg" alt="Visa">
+                        <img class="footer-payment" src="./assets/img/payment/amex.svg" alt="American Express">
+                        <img class="footer-payment" src="./assets/img/payment/paypal.svg" alt="PayPal">
+                        <img class="footer-payment" src="./assets/img/payment/maestro.svg" alt="Maestro">
+                        <img class="footer-payment" src="./assets/img/payment/klarna.svg" alt="Klarna">
 
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    </footer>
 </body>
 </html>
