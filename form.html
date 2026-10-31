@@ -14,7 +14,7 @@
     <!-- Promo -->
     <div class="mr-xl-8">
       <div id="skiplink">
-        <a href="#content">Skip to Main Content</a>
+        <a class="text-dark" href="#content">Skip to Main Content</a>
       </div>
       <i class="fe fe-truck mr-2"></i> <span class="heading-xxxs">Free shipping worldwide</span>
     </div>
@@ -27,7 +27,7 @@
     <!-- Brand -->
     <h1 class="sr-hidden">ACME Fashion House</h1>
     <a class="navbar-brand" href="#">
-      <img src="./assets/img/site/logo.png" width="209" height="81">
+      <img src="./assets/img/site/logo.png" width="209" height="81" alt="ACME Fashion House">
     </a>
 
     <!-- Collapse -->
@@ -36,50 +36,50 @@
       <ul class="navbar-nav mx-auto">
         <li class="nav-item dropdown">
           <!-- Toggle -->
-          <a class="nav-link" href="#">Home</a>
+          <a class="nav-link text-dark" href="#">Home</a>
         </li>
         <li class="nav-item dropdown position-static">
           <!-- Toggle -->
-          <a class="nav-link" href="#">Catalog</a>
+          <a class="nav-link text-dark" href="#">Catalog</a>
         </li>
         <li class="nav-item dropdown">
           <!-- Toggle -->
-          <a class="nav-link" href="#">Shop</a>
+          <a class="nav-link text-dark" href="#">Shop</a>
         </li>
         <li class="nav-item dropdown">
           <!-- Toggle -->
-          <a class="nav-link" href="#">Pages</a>
+          <a class="nav-link text-dark" href="#">Pages</a>
         </li>
         <li class="nav-item dropdown">
           <!-- Toggle -->
-          <a class="nav-link" href="#">Blog</a>
+          <a class="nav-link text-dark" href="#">Blog</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Docs</a>
+          <a class="nav-link text-dark" href="#">Docs</a>
         </li>
       </ul>
 
       <!-- Nav -->
       <ul class="navbar-nav flex-row">
         <li class="nav-item">
-          <a class="nav-link" href="#">
-            <i class="fe fe-search"></i>
+          <a class="nav-link" href="#" aria-label="Search">
+            <i class="fe fe-search" aria-hidden="true"></i>
           </a>
         </li>
         <li class="nav-item ml-lg-n4">
-          <a class="nav-link" href="#">
-            <i class="fe fe-user"></i>
+          <a class="nav-link" href="#" aria-label="Your account">
+            <i class="fe fe-user" aria-hidden="true"></i>
           </a>
         </li>
         <li class="nav-item ml-lg-n4">
-          <a class="nav-link" href="#">
-            <i class="fe fe-heart"></i>
+          <a class="nav-link" href="#" aria-label="Your favourites">
+            <i class="fe fe-heart" aria-hidden="true"></i>
           </a>
         </li>
         <li class="nav-item ml-lg-n4">
-          <a class="nav-link" href="#">
+          <a class="nav-link" href="#" aria-label="Shopping basket, 2 items">
 								<span data-cart-items="2">
-									<i class="fe fe-shopping-cart"></i>
+									<i class="fe fe-shopping-cart" aria-hidden="true"></i>
 								</span>
           </a>
         </li>
@@ -120,11 +120,13 @@
           </p>
 
           <div class="border">
+            <form method="post">
+            <p><span aria-hidden="true">*</span> Required fields</p>
 
-            <label>Title</label>
+            <label for="title">Title <span aria-hidden="true">*</span><span class="sr-only"> (required)</span></label>
             <div class="form-group">
-              <select class="custom-select" id="title">
-                <option value="? string: ?"></option>
+              <select class="custom-select" id="title" name="title" required>
+                <option value="" selected disabled>Select a title</option>
                 <option value="Mr">Mr</option>
                 <option value="Mrs">Mrs</option>
                 <option value="Miss">Miss</option>
@@ -138,49 +140,50 @@
               </select>
             </div>
 
-            <label>First Name</label>
+            <label for="first">First Name <span aria-hidden="true">*</span><span class="sr-only"> (required)</span></label>
             <div class="form-group">
-              <input type="text" id="first" class="form-control" autocomplete="off">
+              <input type="text" id="first" name="first" class="form-control" autocomplete="given-name" required>
             </div>
 
-            <label>Last Name</label>
+            <label for="last">Last Name <span aria-hidden="true">*</span><span class="sr-only"> (required)</span></label>
             <div class="form-group">
-              <input type="text" id="last" class="form-control" autocomplete="off" maxlength="40">
+              <input type="text" id="last" name="last" class="form-control" autocomplete="family-name" maxlength="40" required>
             </div>
 
-            <label>Email Address</label>
+            <label for="email">Email Address <span aria-hidden="true">*</span><span class="sr-only"> (required)</span></label>
             <div class="form-group">
-              <input type="text" id="email" class="form-control" autocomplete="off">
+              <input type="email" id="email" name="email" class="form-control" autocomplete="email" required>
             </div>
 
             <div class="custom-control custom-checkbox form-group">
-              <input type="checkbox" id="signup" class="custom-control-input">
+              <input type="checkbox" id="signup" name="signup" class="custom-control-input">
               <label class="custom-control-label signup" for="signup">Signup to our newsletter</label>
             </div>
 
-            <p>Please indicate your shipping option preferences by selecting the relevant option</p>
-
-            <div class=" form-group">
+            <fieldset class="form-group border-0 p-0">
+              <legend class="h6">Shipping option preferences (optional)</legend>
+              <p>Please select a preferred shipping option.</p>
               <div class="custom-control custom-radio">
-                <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                <input type="radio" id="customRadio1" name="shipping-option" value="standard" class="custom-control-input">
                 <label class="custom-control-label" for="customRadio1">Standard 10 to 14 days</label>
               </div>
               <div class="custom-control custom-radio">
-                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                <input type="radio" id="customRadio2" name="shipping-option" value="priority" class="custom-control-input">
                 <label class="custom-control-label" for="customRadio2">Priority 7 to 10 days</label>
               </div>
 
               <div class="custom-control custom-radio">
-                <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
+                <input type="radio" id="customRadio3" name="shipping-option" value="express" class="custom-control-input">
                 <label class="custom-control-label" for="customRadio3">3 workings days</label>
               </div>
-            </div>
+            </fieldset>
 
-            <p>By creating an account, you acknowledge that you're aware that your personal data will be used in line with our <a href="#">Privacy Policy</a>. View our <a href="#">Customer Data Promise</a> for more information.</p>
+            <p>By creating an account, you acknowledge that you're aware that your personal data will be used in line with our <a class="text-dark" href="#">Privacy Policy</a>. View our <a class="text-dark" href="#">Customer Data Promise</a> for more information.</p>
 
-            <p>You are also agreeing to cookies being used in line with our <a href="#">Cookie Policy</a> Details on how to disable cookies are set out in the same policy.</p>
+            <p>You are also agreeing to cookies being used in line with our <a class="text-dark" href="#">Cookie Policy</a> Details on how to disable cookies are set out in the same policy.</p>
 
-            <button type="submit" class="btn btn-primary">Create Account</button>
+            <button type="submit" class="btn btn-primary text-dark">Create Account</button>
+            </form>
           </div>
         </div>
       </div>
@@ -201,7 +204,8 @@
           <form class="mb-11">
             <div class="form-row align-items-start">
               <div class="col">
-                <input type="email" class="form-control form-control-gray-700 form-control-lg" placeholder="Enter Email *">
+                <label class="sr-only text-white" for="footer-email">Email address</label>
+                <input id="footer-email" type="email" class="form-control form-control-gray-700 form-control-lg" placeholder="Enter Email *">
               </div>
               <div class="col-auto">
                 <button type="submit" class="btn btn-gray-500 btn-lg">Subscribe</button>
@@ -213,7 +217,7 @@
       <div class="row">
         <div class="col-12 col-md-3">
           <!-- Heading -->
-          <img src="./assets/img/site/logobw.png" width="205" height="81">
+          <img src="./assets/img/site/logobw.png" width="205" height="81" alt="">
         </div>
         <div class="col-6 col-sm">
 
@@ -276,17 +280,18 @@
           <div class="col-auto">
 
             <!-- Payment methods -->
-            <img class="footer-payment" src="./assets/img/payment/mastercard.svg" >
-            <img class="footer-payment" src="./assets/img/payment/visa.svg" >
-            <img class="footer-payment" src="./assets/img/payment/amex.svg" >
-            <img class="footer-payment" src="./assets/img/payment/paypal.svg" >
-            <img class="footer-payment" src="./assets/img/payment/maestro.svg" >
-            <img class="footer-payment" src="./assets/img/payment/klarna.svg" >
+            <img class="footer-payment" src="./assets/img/payment/mastercard.svg" alt="Mastercard">
+            <img class="footer-payment" src="./assets/img/payment/visa.svg" alt="Visa">
+            <img class="footer-payment" src="./assets/img/payment/amex.svg" alt="American Express">
+            <img class="footer-payment" src="./assets/img/payment/paypal.svg" alt="PayPal">
+            <img class="footer-payment" src="./assets/img/payment/maestro.svg" alt="Maestro">
+            <img class="footer-payment" src="./assets/img/payment/klarna.svg" alt="Klarna">
 
           </div>
         </div>
       </div>
     </div>
+</div>
 </footer>
 </body>
 </html>
